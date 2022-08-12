@@ -67,3 +67,10 @@ The program was written with Python 3.9.13 and the following python packages are
 ## Note
 
 - Change image noise reduction methods, contours parameters to get different results or improve the current developed more. 
+
+## **Functionality**
+1. A GUI interface that makes image selection easier using ImageTk
+2. Performs all the stages of Automatic License plate recognition (ALPR); plate localization, character segmentation and character recognition
+3. You can generate your model that will be used by the ALPR
+4. You can use your own training data
+5. Easy visualization for debugging purposes
