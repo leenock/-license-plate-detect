@@ -5,7 +5,7 @@ import cv2
 #  installed location of Tesseract-OCR in your system -- specify the directory after installing tesseract
 pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\\tesseract'
 
-# Load image, create blank mask, convert to HSV, define thresholds, color threshold
+# Load image, create blank mask, convert to HSV, define thresholds, color threshold cproc
 image = cv2.imread('YvuWB.png')
 result = np.zeros(image.shape, dtype=np.uint8)
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
