@@ -1,3 +1,4 @@
+from this import d
 import numpy as np
 import pytesseract
 import cv2
@@ -13,6 +14,8 @@ lower = np.array([0,0,0])
 upper = np.array([179,100,130])
 mask = cv2.inRange(hsv, lower, upper)
 cv2.imshow('mask', mask)
+
+
 
 # Perform morphological close and merge for 3-channel ROI extraction
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3,3))
